@@ -1,0 +1,65 @@
+% Template:     Informe LaTeX
+% Documento:    Archivo principal
+% Versión:      8.1.0 (19/03/2022)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/informe]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Informe Mezcladores}
+\def\documentsubtitle {}
+\def\documentsubject {AS3201 - Astronomía Experimental}
+
+\def\documentauthor {Nombre del autor}
+\def\coursename {Astronomía Experimental}
+\def\coursecode {AS3201}
+
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de Astronomía}
+\def\universitydepartmentimage {departamentos/das}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Santiago de Chile}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+\begin{tabular}{ll}
+	Constanza Vicencio Cereseto\\
+	Profesor: Ricardo Finger\\
+	Auxiliar: Boris Cuevas\\
+	\multicolumn{2}{l}{Fecha de entrega: 21 de julio de 2022} \\
+	\multicolumn{2}{l}{\universitylocation}
+\end{tabular}
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\input{example} % Ejemplo, se puede borrar
+
+% FIN DEL DOCUMENTO
+\end{document}
